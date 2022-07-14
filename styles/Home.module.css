@@ -1,0 +1,59 @@
+.container {
+  padding: 100px 100px;
+  background-color: #ebedff;
+}
+.main {
+  min-height: 100vh;
+}
+.content {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  padding: 2em 1em;
+}
+.upload {
+  margin-bottom: 20px;
+  align-items: center;
+  display: flex;
+}
+.upload svg {
+  margin-right: 20px;
+  width: 15%;
+}
+.upload h2 {
+  margin: 0;
+}
+.upload button {
+  opacity: 1;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 0.0625em solid #484a4d;
+  color: #484a4d;
+  cursor: pointer;
+  outline: 0;
+}
+.textfield {
+  padding: 10px 0;
+}
+.textfield input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.content .btn_2 {
+  padding-top: 30px;
+  text-align: center;
+}
+.content .btn_2 button {
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  padding: 10px 50px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
