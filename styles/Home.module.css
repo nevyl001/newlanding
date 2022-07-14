@@ -1,54 +1,63 @@
+.page {
+  background-color: #f5f6f7;
+}
 .container {
-  padding: 100px 100px;
-  background-color: #ebedff;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
 }
-.main {
-  min-height: 100vh;
-}
-.content {
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  padding: 2em 1em;
-}
-.upload {
-  margin-bottom: 20px;
-  align-items: center;
+.section_1 {
   display: flex;
 }
-.upload svg {
-  margin-right: 20px;
-  width: 15%;
+.section_left {
+  padding: 200px 100px;
+  width: 50%;
 }
-.upload h2 {
-  margin: 0;
+.section_rigth {
+  width: 50%;
 }
-.upload button {
-  opacity: 1;
-  background-color: transparent;
-  border: 0;
-  border-bottom: 0.0625em solid #484a4d;
-  color: #484a4d;
-  cursor: pointer;
-  outline: 0;
-}
-.textfield {
-  padding: 10px 0;
-}
-.textfield input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-}
-.content .btn_2 {
-  padding-top: 30px;
+.section_left p {
   text-align: center;
 }
-.content .btn_2 button {
+.label_1 {
+  padding: 20px 0;
+  text-align: center;
+}
+.section_left .btn {
+  padding: 10px 20px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.textfield {
+  text-align: center;
+  padding: 20px 0;
+}
+.section_rigth {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.upload {
+  gap: 15px;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+}
+.upload_1 {
   border-radius: 10px;
-  border: 0.5px solid gray;
-  padding: 10px 50px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+}
+.upload svg {
+  height: 3em;
+}
+.btn {
+  color: #ffffff;
+  background: #a8a8a8 0% 0% no-repeat padding-box;
+  box-shadow: 5px 5px 10px #00000019;
+  border-radius: 31px;
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
