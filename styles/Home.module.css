@@ -1,68 +1,121 @@
 .page {
   background-color: #f5f6f7;
 }
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 0;
+.logo {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  width: 50px;
 }
-.section_1 {
-  display: flex;
+.page_home {
+  background-position: right top;
+  background-image: url("/img/bg.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
-.section_left {
-  padding: 200px 100px;
-  width: 50%;
+.form_box {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  width: 400px;
 }
-.section_rigth {
-  width: 50%;
-}
-.section_left p {
-  text-align: center;
-}
-.label_1 {
-  padding: 20px 0;
-  text-align: center;
-}
-.section_left .btn {
-  padding: 10px 20px;
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-}
-.textfield {
-  text-align: center;
-  padding: 20px 0;
-}
-.section_rigth {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.upload {
+.form_box .upload {
   gap: 15px;
   align-items: center;
   background-color: #ffffff;
   display: flex;
+  text-align: center;
+  cursor: pointer;
 }
-.upload_1 {
-  border-radius: 10px;
-  padding: 40px 30px;
-  background-color: #ffffff;
-}
-.upload svg {
+.form_box .upload svg {
   height: 3em;
 }
-.btn {
-  color: #ffffff;
-  background: #a8a8a8 0% 0% no-repeat padding-box;
-  box-shadow: 5px 5px 10px #00000019;
-  border-radius: 31px;
-  opacity: 1;
+.form_box .form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow: 0 10px 50px 0 hsl(0deg 0% 39% / 40%);
+}
+.form_box input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #a8a8a8;
+}
+.form_box .checkbox {
+  text-align: center;
+  font-size: 14px;
+  color: #707070;
+  padding: 10px 0;
+}
+.form_box .checkbox input {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+.form_box .btn {
+  text-align: center;
+}
+.form_box .btn button {
+  background-color: #a8a8a8;
+  border-radius: 40px;
+  border: none;
+  padding: 14px 80px;
+  font-size: 18px;
+  color: white;
 }
 
 @media (max-width: 600px) {
-  .grid {
+  .logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+  }
+  .page_home {
+    background-position: right top;
+    background-image: url("/img/bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 50%;
+  }
+  .form_box {
+    position: initial;
+    margin: auto;
+    width: 80%;
+  }
+  .form_box .upload {
+    gap: 15px;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .form_box .upload svg {
+    height: 3em;
+  }
+  .form_box .form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 10px 50px 0 hsl(0deg 0% 39% / 40%);
+  }
+  .form_box input {
+    display: block;
     width: 100%;
-    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid #a8a8a8;
   }
 }

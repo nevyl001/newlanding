@@ -1,20 +1,22 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Fragment } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <Fragment>
       <Head>
-        <title>landing-1</title>
-        <meta name="landing" content="lanidng" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>InDrive - Sube tu propio sonido</title>
+        <link rel="icon" href="/img/icon.jpg" />
       </Head>
-
       <main className={styles.main}>
-        <div className={styles.section_1}>
-          <div className={styles.section_left}>
-            <div className={styles.upload_1}>
+        <div className={styles.page_home}>
+          <div className={styles.logo}>
+            <Image src="/img/logo.png" alt="InDrive" width={105} height={99} />
+          </div>
+          <div className={styles.form_box}>
+            <div className={styles.form}>
               <div className={styles.upload}>
                 <svg viewBox="0 0 72 72">
                   <path
@@ -27,36 +29,26 @@ export default function Home() {
                   <h2>Subir archivos</h2>
                 </div>
               </div>
-              <div className={styles.textfield}>
-                <label htmlFor="last">Email:</label>
-                <input type="email" id="email" name="Email" />
+              <div className={styles.inputs}>
+                <input
+                  type="text"
+                  name="title"
+                  placeholder="Nombre de tu pieza"
+                />
+                <input type="text" name="name" placeholder="Nombre completo" />
+                <input type="email" name="Email" placeholder="Email" />
               </div>
             </div>
-            <div className={styles.label_1}>
-              <label>
-                <input type="checkbox" id="cbox1" value="checkbox" /> Acepto
-                términos y condiciones
-              </label>
+            <div className={styles.checkbox}>
+              <input type="checkbox" id="cbox1" value="checkbox" /> Acepto
+              términos y condiciones
             </div>
             <div className={styles.btn}>
-              <a href="#">Enviar</a>
+              <button type="submit">Enviar</button>
             </div>
-          </div>
-          <div className={styles.section_rigth}>
-            <Image src="/img/Arte.png" alt="Logo" width={1319} height={1450} />
-          </div>
-        </div>
-        <div className={styles.container}>
-          <div className={styles.section_2}>
-            <h1>
-              Sonidos que
-              <br /> te mueven.
-            </h1>
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}></footer>
-    </div>
+    </Fragment>
   );
 }
